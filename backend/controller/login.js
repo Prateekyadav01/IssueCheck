@@ -26,9 +26,9 @@ const login = async (req, res) => {
     };
     const token = jwt.sign(tokenData, process.env.TOKEN_SECRET_KEY, { expiresIn: '8h' });
 
-    const options = {
-      sameSite: 'lax',
-      secure: process.env.NODE_ENV === 'production',
+      const options = {
+      sameSite: 'none',
+      secure: true,
       httpOnly: true,
       path:'/'
     };
