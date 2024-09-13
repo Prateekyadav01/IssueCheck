@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { CgProfile } from "react-icons/cg";
-import { toast } from "react-toastify"; 
+import { toast } from "react-toastify"; // Import toast
 import axios from 'axios'
 
 const LoginPage = () => {
@@ -23,13 +23,13 @@ const LoginPage = () => {
     e.preventDefault();
     try {
         const response = await axios.post(
-            "http://localhost:4000/api/login", 
+            "https://zsshop.onrender.com/api/login", 
             data, 
             {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                withCredentials: true
+                withCredentials: true // Include credentials (cookies) if needed
             }
         );
 
