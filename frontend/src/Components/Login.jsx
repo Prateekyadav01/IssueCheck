@@ -26,9 +26,7 @@ const LoginPage = () => {
             "https://zsshop.onrender.com/api/login", 
             data, 
             {
-                headers: {
-                    "Content-Type": "application/json",
-                },
+              
                 withCredentials: true // Include credentials (cookies) if needed
             }
         );
