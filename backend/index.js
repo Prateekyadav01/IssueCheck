@@ -18,7 +18,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
     'http://localhost:5173',
-   'https://zs-shop.vercel.app'
+   'https://issue-check.vercel.app'
   ];
   
   // CORS options
